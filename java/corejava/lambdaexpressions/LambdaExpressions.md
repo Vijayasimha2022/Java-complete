@@ -1,7 +1,5 @@
 # 1.Introduction to Lambda Expressions
 
-Let's start a new and very important topic: **Lambda Expressions**.
-
 Lambda expressions are essentially used to define **anonymous methods** (nameless methods or functions). To understand how they work, we first need to understand their relationship with Interfaces.
 
 I will walk you through the evolution of how we implement interfaces in Java, starting from the traditional approach, moving to anonymous classes, and finally arriving at Lambda expressions. This comparative approach will help you comfortably grasp the concept.
@@ -142,15 +140,10 @@ Instead of writing a lengthy class or an anonymous inner class just to print a s
 (parameter_list) -> { body }
 
 ```
-Here are the notes for the second video. I have continued the step-by-step style and clarified the syntax rules regarding the `return` keyword and curly braces, as this is a common point of confusion.
-
 ---
-
 # 2.Lambda Expressions: Parameters and Return Types
 
-In this section, we will expand our understanding of Lambda expressions by learning how to handle **parameters** and **return values**.
-
-If you haven't reviewed the previous notes, please do so, as this builds directly on the functional interface concept.
+Lets expand our understanding of Lambda expressions by learning how to handle **parameters** and **return values**.
 
 ## 1. Handling a Single Parameter
 
@@ -275,7 +268,7 @@ In the example `(a, b) -> a + b`, the code on the right side (`a + b`) is just a
 
 # 3.Lambda Expressions: Scope and Passing as Parameters
 
-In this video, we will dive deeper into the capabilities of Lambda expressions. Specifically, we will answer two important questions:
+We will answer two important questions:
 
 1. **Variable Scope:** Can Lambdas access variables from their surroundings (local variables, instance variables)? Can they modify them?
 2. **Passing Lambdas:** Can we pass a Lambda expression as an argument to a method?
