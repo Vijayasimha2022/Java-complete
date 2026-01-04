@@ -1,6 +1,7 @@
 package collections;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class ArrayListDemo {
 
@@ -158,11 +159,35 @@ public class ArrayListDemo {
         }
         System.out.println();
 
-
-
+        //Traversin list
+        //public void forEach(Consumer<? super E> action)
+        //Performs the given action for each element of the Iterable until all elements have been processed or the action throws an exception.
+        // Actions are performed in the order of iteration, if that order is specified. Exceptions thrown by the action are relayed to the caller.
+        //NullPointerException - if the specified action is null
+        System.out.println("for each method : ");
+        list2.forEach(i->System.out.print(i+" "));
+        System.out.println("Using method reference");
+        list2.forEach(System.out::print);
 
 
         //public Iterator<E> iterator()
+        //It is used to traverse elements in the forward direction only.
+        //hasNext(): Returns true if the iteration has more elements.
+
+        Iterator<Integer> i = list3.iterator();
+
+        System.out.println("List 3 :");
+
+        while(i.hasNext()){
+            //next(): Returns the next element in the iteration. It throws NoSuchElementException if no more element is present.
+            System.out.println(i.next());
+
+        }
+        //Removes the last element returned by next(). This method can be called only once per call to next().
+
+
+
+
 
         //public ListIterator<E> listIterator()
         //
