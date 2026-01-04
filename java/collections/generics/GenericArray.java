@@ -1,4 +1,4 @@
-package collections;
+package collections.generics;
 
 class MyArray<T>{
 

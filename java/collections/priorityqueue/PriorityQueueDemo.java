@@ -1,4 +1,4 @@
-package collections;
+package collections.priorityqueue;
 
 public class PriorityQueueDemo {
 }
