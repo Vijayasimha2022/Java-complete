@@ -1,4 +1,4 @@
-package collections;
+package collections.generics;
 
 class Data<T>{
     private Object data;
