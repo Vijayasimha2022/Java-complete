@@ -1,0 +1,6 @@
+#Data base configuration
+#Thu Jan 08 22:38:40 IST 2026
+connection.timeout=5000
+database.password=securePass123
+database.url=jdbc\:mysql\://localhost\:3306/mydb
+database.user=admin_user
